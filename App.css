@@ -1,0 +1,261 @@
+*{
+  margin: 0;
+    padding: 0;
+}
+.App{
+  display: block;
+  background: rgb(82, 171, 174);
+  height: 100%;
+  
+}
+.persona{
+  width: 200px;
+  height: 300px;
+  border: 5px solid rgb(103, 124, 145);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: lightgray;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+.description{
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.persona img{
+  border-radius: 10px;
+ width: 150%;
+ object-fit: cover;
+  height: 70%;
+
+}
+
+.allcharacters{
+  max-width: 800px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.toolbar{
+  height: 80px;
+  background-color: rgb(50, 114, 135);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.routes{
+padding-top:80px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+.mainpage {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border: 5px solid gray;
+  height: 500px;
+  width: 900px;
+  padding: 40px;
+  justify-content: space-evenly;
+}
+
+.player_info{
+  
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 20px;
+  
+
+}
+.player_info img{
+ height: 60%;
+border-radius: 10px;
+  /* width: 150%; */
+  object-fit: cover;
+  height: 70%;
+}
+
+.monster{
+  width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    padding: 20px;
+}
+.monster img {
+  
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+  
+}
+
+.inventory_info{
+  
+  width: 500px;
+  height: 100%;
+  padding: 15px;
+  overflow: auto;
+}
+
+.shop{
+  border: 1px solid black;
+  width: 500px;
+  height: 600px;
+  overflow: auto;
+}
+.selection button{
+  width: 50%;
+  height: 30px;
+  border: none;
+  color: black;
+  font-weight: bolder;
+  
+  
+}
+.item{
+  border: 3px solid rgb(122, 121, 121);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.item:hover{
+  background: rgba(255, 0, 0, 0.098);
+}
+.Shopas{
+  display: flex;
+}
+.inventory {
+  border: 1px solid black;
+  width: 500px;
+  height: 600px;
+  overflow: auto;
+}
+
+.gold{
+  color: gold;
+}
+
+.fight {
+  width: 100px;
+  height: 50px;
+}
+.hpuser-wraper{
+  height: 30px;
+  width: 90%;
+  border: 1px solid black;
+}
+.hpmonster-wraper{
+  height: 30px;
+    width: 90%;
+    border: 1px solid black;
+}
+.hp-user{
+  height: 100%;
+  
+  background: rgb(192, 202, 176);
+
+}
+
+.hp-monster{
+height: 100%;
+  
+  background: rgb(192, 202, 176);
+}
+
+.invent{
+  width: 200px;
+  height: 50px;
+}
+
+.arena{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.wpns{
+  height: 60px;
+}
+.wpns img{
+  height: 100%;
+  border-radius: none !important;
+
+}
+
+
+.modal {
+
+  display: block;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.621);
+}
+
+.insideModal {
+  flex-direction: column;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  background: grey;
+  padding: 30px;
+  border-radius: 5px;
+  overflow: auto;
+}
+.gameover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: red;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  background: grey;
+  padding: 30px;
+  border-radius: 5px;
+}
+.gameover button{
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  background: green;
+}
